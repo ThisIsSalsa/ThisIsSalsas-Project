@@ -11,6 +11,7 @@ TagManager:
   - Log
   - Spike
   - Axe
+  - WorkBench
   layers:
   - Default
   - TransparentFX
