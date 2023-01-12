@@ -7,6 +7,9 @@ public class makeme : MonoBehaviour
     //make a counter that sets all transperatnt exept the one im building
     private int CountChild;
     private int CurentChild = 0;
+    public AudioSource soruce;
+    public AudioClip clip;
+    public AudioSource source;
     void Start()
     {
         CountChild = transform.childCount;
@@ -20,5 +23,6 @@ public class makeme : MonoBehaviour
     {
         CurentChild++;
         transform.GetChild(CurentChild).gameObject.SetActive(true);
+        soruce.PlayOneShot(clip);
     }
 }

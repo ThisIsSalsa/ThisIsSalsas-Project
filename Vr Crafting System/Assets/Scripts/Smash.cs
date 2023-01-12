@@ -12,7 +12,8 @@ public class Smash : MonoBehaviour
     public string TagOfObject = "";
     public Transform BaseLocation;
     private int i;
-  
+    public AudioClip clip;
+    public AudioSource src;
     private void OnTriggerEnter(Collider other)
     {
 
@@ -29,7 +30,7 @@ public class Smash : MonoBehaviour
 
                 GameObject SpawnSecondThing = Instantiate(CraftedItem);
                 SpawnSecondThing.transform.position = BaseLocation.position;
-
+                src.PlayOneShot(clip);
             }
         }
     }

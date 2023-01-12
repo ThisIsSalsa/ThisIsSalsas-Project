@@ -131,3 +131,5 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 8366652418988116499}
   Name: Ring(Clone)
+  clip: {fileID: 0}
+  src: {fileID: 0}

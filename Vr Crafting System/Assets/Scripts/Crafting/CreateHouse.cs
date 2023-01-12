@@ -24,7 +24,6 @@ public class CreateHouse : MonoBehaviour
     void Start()
     {
         List<Transform> children = GetChildren(transform);
-
         foreach (Transform child in children)
         {
             componentCount++;
@@ -33,7 +32,6 @@ public class CreateHouse : MonoBehaviour
     List<Transform> GetChildren(Transform parent)
     {
         List<Transform> children = new List<Transform>();
-
         foreach (Transform child in parent)
         {
             children.Add(child);
@@ -44,14 +42,10 @@ public class CreateHouse : MonoBehaviour
     {
         if (other.tag == materialMadeOf)
         {
-            
             Destroy(other.gameObject);
             list[componentNumber].GetComponent<MeshRenderer>().material = material;
-
             componentNumber++;
-
             isItDone();
         }
     }
-    
 }
